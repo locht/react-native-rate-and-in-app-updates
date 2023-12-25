@@ -17,7 +17,7 @@ const LINKING_ERROR =
 //       }
 //     );
 
-const { RNRate } = NativeModules
+const { RNRate, InAppUpdates } = NativeModules
   ? NativeModules
   : new Proxy(
       {},
@@ -117,11 +117,16 @@ export {
 } from './types';
 
 // @ts-expect-error
-import InAppUpdates from './InAppUpdates';
-
-// export default InAppUpdates;
-export { Rate, InAppUpdates };
+// import InAppUpdates from './InAppUpdates';
 
 // export function multiply(a: number, b: number): Promise<number> {
 //   return RateAndInAppUpdates.multiply(a, b);
 // }
+
+// cách 1: module.exports = NativeModules.InAppUpdate;
+
+// const { InAppUpdate } = NativeModules;
+// Kiểm tra quyền camera trên IOS
+
+export { InAppUpdates };
+export default Rate;
