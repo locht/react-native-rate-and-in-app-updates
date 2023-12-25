@@ -1,4 +1,4 @@
-package com.sudoplz.rninappupdates;
+package com.rateandinappupdates;
 
 import androidx.annotation.NonNull;
 

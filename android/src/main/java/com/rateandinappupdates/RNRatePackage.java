@@ -1,4 +1,4 @@
-package com.reactnativerate;
+package com.rateandinappupdates;
 
 import java.util.Arrays;
 import java.util.Collections;

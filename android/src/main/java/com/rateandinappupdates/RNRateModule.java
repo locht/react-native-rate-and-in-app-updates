@@ -1,4 +1,4 @@
-package com.reactnativerate;
+package com.rateandinappupdates;
 
 import android.app.Activity;
 import androidx.annotation.NonNull;
