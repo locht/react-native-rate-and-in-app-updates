@@ -3,16 +3,16 @@ import { getVersion } from 'react-native-device-info';
 
 import { compareVersions } from './utils';
 import {
-  StatusUpdateEvent,
-  CheckOptions,
-  InstallationResult,
-  AndroidInAppUpdateExtras,
-  AndroidStatusEventListener,
-  AndroidIntentResultListener,
-  AndroidStartUpdateOptions,
+  type StatusUpdateEvent,
+  type CheckOptions,
+  type InstallationResult,
+  type AndroidInAppUpdateExtras,
+  type AndroidStatusEventListener,
+  type AndroidIntentResultListener,
+  type AndroidStartUpdateOptions,
   AndroidAvailabilityStatus,
   AndroidUpdateType,
-  AndroidNeedsUpdateResponse,
+  type AndroidNeedsUpdateResponse,
 } from './types';
 import InAppUpdatesBase from './InAppUpdatesBase';
 
