@@ -1,3 +1,19 @@
+import type {
+  StartUpdateOptions,
+  NeedsUpdateResponse,
+  CheckOptions,
+  AndroidIntentResultListener,
+  AndroidStatusEventListener,
+} from './types';
+export * from './types';
+
+export {
+  AndroidUpdateType as IAUUpdateKind,
+  AndroidAvailabilityStatus as IAUAvailabilityStatus,
+  AndroidInstallStatus as IAUInstallStatus,
+  AndroidOther as IAUOther,
+} from './types'; // Android only
+
 declare module 'react-native-rate' {
   export interface IConfig {
     AppleAppID?: string;
@@ -24,24 +40,6 @@ declare module 'react-native-rate' {
     ): void;
   }
 }
-
-import type {
-  StartUpdateOptions,
-  NeedsUpdateResponse,
-  CheckOptions,
-  AndroidIntentResultListener,
-  AndroidStatusEventListener,
-} from './types';
-
-export * from './types';
-
-export {
-  AndroidUpdateType as IAUUpdateKind,
-  AndroidAvailabilityStatus as IAUAvailabilityStatus,
-  AndroidInstallStatus as IAUInstallStatus,
-  AndroidOther as IAUOther,
-} from './types'; // Android only
-
 declare class SpInAppUpdates {
   constructor(isDebug: boolean);
 

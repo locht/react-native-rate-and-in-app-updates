@@ -17,6 +17,7 @@ public class RateAndInAppUpdatesPackage implements ReactPackage {
   public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
     List<NativeModule> modules = new ArrayList<>();
     modules.add(new RateAndInAppUpdatesModule(reactContext));
+    modules.add(new InAppUpdateModule(reactContext));
     return modules;
   }
 
