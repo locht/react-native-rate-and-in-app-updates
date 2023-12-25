@@ -1,4 +1,4 @@
-package com.myduchospital.system;
+package com.rateandinappupdates;
 
 import androidx.annotation.NonNull;
 
